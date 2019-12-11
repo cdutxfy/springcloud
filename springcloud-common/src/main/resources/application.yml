@@ -1,0 +1,14 @@
+server:
+  port: 8001
+ 
+spring:
+  application:
+    name: springcloud-common
+
+eureka:
+  instance:
+    instance-id: springcloud-common
+    appname: ${spring.application.name}
+  client: 
+    service-url: 
+      defaultZone: http://localhost:8888/eureka/
