@@ -74,5 +74,7 @@
 	<modules>
 		<module>springcloud-eureka</module>
 		<module>springcloud-common</module>
+		<module>springcloud-api</module>
+		<module>springcloud-provider-8001</module>
 	</modules>
 </project>
