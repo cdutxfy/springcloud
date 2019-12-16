@@ -16,22 +16,23 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Data
 @Accessors(chain = true)
-public class DeptEntity implements Serializable{
-    /**
-     *  部门编码 主键
-     */
-	private Long deptNo;
-    /**
-     * 部门名称
-     */
-    private String deptName;
+public class DeptEntity implements Serializable {
 	/**
-     * 数据库名称
-     */
-    private String dbSource;
+	 * 部门编码 主键
+	 */
+	private Long deptNo;
+	/**
+	 * 部门名称
+	 */
+	private String dname;
+	/**
+	 * 数据库名称
+	 */
+	private String db_source;
 
-    public static void main(String[] args) {
-    	DeptEntity deptEntity = new DeptEntity();
-    	deptEntity.setDbSource("").setDeptName("").setDeptNo(1L);
+	public DeptEntity(String dname) {
+		super();
+		this.dname = dname;
 	}
+
 }

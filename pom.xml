@@ -76,5 +76,6 @@
 		<module>springcloud-common</module>
 		<module>springcloud-api</module>
 		<module>springcloud-provider-8001</module>
+		<module>springcloud-consumer-dept-80</module>
 	</modules>
 </project>
