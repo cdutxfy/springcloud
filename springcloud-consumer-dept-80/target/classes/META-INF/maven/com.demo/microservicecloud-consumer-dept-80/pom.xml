@@ -9,8 +9,10 @@
 	</parent>
 	<artifactId>microservicecloud-consumer-dept-80</artifactId>
 	<description>部门微服务消费者</description>
+
 	<dependencies>
-		<dependency><!-- 自己定义的api -->
+		<dependency>
+			<!-- 自己定义的api -->
 			<groupId>com.demo</groupId>
 			<artifactId>microservicecloud-api</artifactId>
 			<version>${project.version}</version>
@@ -18,7 +20,9 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>   <!-- 修改后立即生效，热部署 -->
+		</dependency>
+
+		<!-- 修改后立即生效，热部署 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>springloaded</artifactId>
@@ -26,6 +30,20 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+		<!--Ribbon相关引用 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 	</dependencies>
 </project>
