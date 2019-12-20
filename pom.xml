@@ -111,5 +111,6 @@
 		<module>springcloud-zuul-gateway-9527</module>
 		<module>springcloud-config-3344</module>
 		<module>springcloud-config-client-3355</module>
+		<module>springcloud-config-eureka-client-7001</module>
 	</modules>
 </project>
